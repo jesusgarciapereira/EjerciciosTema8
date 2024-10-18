@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejemplo", "Ejemplo\Ejemplo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio1", "Ejercicio1\Ejercicio1.csproj", "{0CF10985-D4FE-474D-94D9-0D5D444D08DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio2", "Ejercicio2\Ejercicio2.csproj", "{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{0CF10985-D4FE-474D-94D9-0D5D444D08DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF10985-D4FE-474D-94D9-0D5D444D08DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0CF10985-D4FE-474D-94D9-0D5D444D08DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC18AC2A-D264-488B-B576-DC16D1D9E1D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
