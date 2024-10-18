@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejemplo.MainPage">
 
-    <ScrollView>
-        <StackLayout
+
+    <StackLayout
             Orientation="Vertical">
-        
+
         <HorizontalStackLayout 
             Padding="30,0"
             Spacing="25">
@@ -33,7 +33,7 @@
                 <BoxView
                     Color="Blue"
                     WidthRequest="80"
-                    HeightRequest="80"/>        
+                    HeightRequest="80"/>
 
 
             </VerticalStackLayout>
@@ -64,46 +64,46 @@
 
             </VerticalStackLayout>
 
-           
+
 
         </HorizontalStackLayout>
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition ></RowDefinition>
-                    <RowDefinition ></RowDefinition>
-                    <RowDefinition ></RowDefinition>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
 
 
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition ></ColumnDefinition>
-                    <ColumnDefinition ></ColumnDefinition>
-                    <ColumnDefinition ></ColumnDefinition>
-                    <ColumnDefinition ></ColumnDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
 
-                </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
 
-                <Label 
+            <Label 
                     Text ="Primary colors:"
                     TextColor="Purple"
                     FontAttributes="Bold"
                     />
-                <Label 
+            <Label 
                     Text ="Secondary colors:"
                     TextColor="Purple"
                     FontAttributes="Bold"
                     Grid.Column="2"
                     />
 
-                <BoxView
+            <BoxView
                     Color="Red"
                     WidthRequest="80"
                     HeightRequest="80"
                     Grid.Column="1"
                     />
 
-                <BoxView
+            <BoxView
                     Color="Yellow"
                     WidthRequest="80"
                     HeightRequest="80"
@@ -111,22 +111,22 @@
                     Grid.Row="1"
                     />
 
-                <BoxView
+            <BoxView
                     Color="Blue"
                     WidthRequest="80"
                     HeightRequest="80"
                     Grid.Column="1"
                     Grid.Row="2"
-                    />      
+                    />
 
-                <BoxView
+            <BoxView
                     Color="Green"
                     WidthRequest="80"
                     HeightRequest="80"
                     Grid.Column="3"
                     />
 
-                <BoxView
+            <BoxView
                     Color="Orange"
                     WidthRequest="80"
                     HeightRequest="80"
@@ -134,7 +134,7 @@
                     Grid.Row="1"
                     />
 
-                <BoxView
+            <BoxView
                     Color="Purple"
                     WidthRequest="80"
                     HeightRequest="80"
@@ -142,10 +142,9 @@
                     Grid.Row="2"
                     />
 
-            </Grid>
+        </Grid>
 
-        </StackLayout>
-    </ScrollView>
+    </StackLayout>
 
 
 </ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1.MainPage">
+
+    <Border 
+            Stroke="Purple" 
+            StrokeThickness="8" Padding="10" 
+            Margin="10">
+
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="20,20,0,0" />
+        </Border.StrokeShape>
+
+        <VerticalStackLayout
+            Spacing="10"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+
+            <Button 
+                Text="Botón 1"
+                BorderColor="Black"
+                BorderWidth="6"
+                Padding="10"
+                MaximumWidthRequest="100"/>
+            <Button 
+                Text="Botón 2"
+                MaximumWidthRequest="100"/>
+            <Button 
+                Text="Botón 3"
+                MaximumWidthRequest="100"/>
+
+            <HorizontalStackLayout>
+
+                <Label 
+                     Text="Nombre:"
+                     FontAttributes="Bold"
+                     Margin="10"/>
+
+                <Entry
+                     BackgroundColor="AliceBlue"
+                     WidthRequest="200" />  
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+    </Border>
+
+</ContentPage>
