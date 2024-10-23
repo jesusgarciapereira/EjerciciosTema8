@@ -18,8 +18,8 @@
 
         <!-- Tercera fila: Imágenes en una columna flexible, textos en otra -->
         <Grid ColumnDefinitions="1*, 2*"
-      RowDefinitions="Auto"
-      Padding="0, 10, 0, 10">
+                 RowDefinitions="Auto"
+                Padding="0, 10, 0, 10">
             <!-- FlexLayout para las imágenes -->
             <FlexLayout Grid.Column="0"
                 Direction="Row"
@@ -42,7 +42,9 @@
                 <Label Text="This is my second TextBlock. It contains the same basic text as the others."
                FontSize="14" />
                 <Label Text="This is my third TextBlock. It contains the same basic text as the others."
-               FontSize="14" />
+                       FontSize="14" />
+                <Label Text="This is my fourth TextBlock. It contains the same basic text as the others."
+                       FontSize="14" />
             </StackLayout>
         </Grid>
 
