@@ -3,18 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio2.MainPage">
 
+    <!--Direction "Column", los elementos hijos se colocarán verticalmente-->
     <FlexLayout Direction="Column">
 
-        <!-- Header -->
+        <!-- Los Label pueden tener BackgroundColor y estar centralizados-->
         <Label Text="HEADER"
                FontSize="18"
                BackgroundColor="Aqua"
                HorizontalTextAlignment="Center" />
 
-        <!-- Body -->
+        <!--FlexLayout.Grow="1" este contenedor ocupara todo el espacio disponible-->
+        <!--Por defecto Direction="Row"-->
         <FlexLayout FlexLayout.Grow="1">
 
-            <!-- Content -->
+            <!-- FlexLayout.Basis="50" tamannio base-->
+            <BoxView FlexLayout.Basis="50"
+                     Color="Blue" />
+
             <Label Text="CONTENT"
                    FontSize="18"
                    BackgroundColor="Gray"
@@ -22,18 +27,11 @@
                    VerticalTextAlignment="Center"
                    FlexLayout.Grow="1" />
 
-            <!-- Navigation items-->
-            <BoxView FlexLayout.Basis="50"
-                     FlexLayout.Order="-1"
-                     Color="Blue" />
-
-            <!-- Aside items -->
             <BoxView FlexLayout.Basis="50"
                      Color="Green" />
 
         </FlexLayout>
 
-        <!-- Footer -->
         <Label Text="FOOTER"
                FontSize="18"
                BackgroundColor="Pink"
