@@ -4,13 +4,15 @@
              x:Class="Ejemplo.MainPage">
 
 
+    <!--Layout statico, todos los elementos se mantienen fijos sin importar el tamannio de pantalla-->
+    <!--Puedes poner StackLayout con Orientation = Vertical u Horizontal-->
     <StackLayout
             Orientation="Vertical">
-
+        <!--O tambien puedes poner directamente HorizontalStackLayout o VerticalStackLayout-->
         <HorizontalStackLayout 
             Padding="30,0"
             Spacing="25">
-
+            <!--Spacing es el espacio entre cada elemento dentro del StackLayout-->
             <Label 
                 Text ="Primary colors:"
                 TextColor="Purple"
@@ -20,6 +22,7 @@
             <VerticalStackLayout 
                 Spacing="6">
 
+                <!--Caja de color, le indicas tambien el tamannio que tendra-->
                 <BoxView
                     Color="Red"
                     WidthRequest="80"
@@ -68,19 +71,28 @@
 
         </HorizontalStackLayout>
 
+        <!--Exactamente lo mismo del HorizontalStackLayout pero hecho con Grid-->
         <Grid>
+            <!--Para definir cuantas filas y como son-->
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-
-
             </Grid.RowDefinitions>
+
+            <!--
+            Por defecto: si no especificamos nada, se dividirá la anchura o altura de forma equitativa, variara se modificas la pantalla.
+            Fija: podemos fijar un tamaño usando Width=“50”
+            Auto: tomará el espacio que se necesite dependiendo del contenido, y no variara.
+            Star (*): tomará el espacio restante si sólo es una fila o columna, si son varias hará lo siguiente: por ejemplo, una fila con Width=“*” y otra con Width=“5*” indica que la primera tomará 1/6 y la segunda 5/6 de la anchura restante.
+            -->
+
+            <!--Para definir cuantas columnas y como son-->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
 
             </Grid.ColumnDefinitions>
 
