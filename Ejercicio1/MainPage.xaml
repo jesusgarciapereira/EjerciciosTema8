@@ -3,11 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio1.MainPage">
 
+    <!--Todo el StackLayout tiene un Border como padre, para poder ponerlo a tu gusto-->
+    <!--StrokeThickness es la anchura del borde-->
     <Border 
-            Stroke="Purple" 
-            StrokeThickness="8" Padding="10" 
-            Margin="10">
+        Stroke="Purple"
+        StrokeThickness="8" 
+        Padding="10"
+        Margin="10">
 
+        <!--Esto es para redondear los bordes que quieras-->
         <Border.StrokeShape>
             <RoundRectangle CornerRadius="20,20,0,0" />
         </Border.StrokeShape>
@@ -39,8 +43,8 @@
 
                 <Entry
                      BackgroundColor="AliceBlue"
-                     WidthRequest="200" />  
-
+                     WidthRequest="200" />
+                <!--Los botones y el entry, tienen tamannios fijos en este caso-->
             </HorizontalStackLayout>
 
         </VerticalStackLayout>
