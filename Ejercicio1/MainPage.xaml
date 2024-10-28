@@ -26,15 +26,15 @@
                 BorderColor="Black"
                 BorderWidth="6"
                 Padding="10"
-                MaximumWidthRequest="100"/>
+                />
             <Button 
                 Text="Botón 2"
-                MaximumWidthRequest="100"/>
+                />
             <Button 
                 Text="Botón 3"
-                MaximumWidthRequest="100"/>
+                />
 
-            <HorizontalStackLayout>
+            <HorizontalStackLayout VerticalOptions="Center">
 
                 <Label 
                      Text="Nombre:"
@@ -43,7 +43,7 @@
 
                 <Entry
                      BackgroundColor="AliceBlue"
-                     WidthRequest="200" />
+                     MinimumWidthRequest="120" />
                 <!--Los botones y el entry, tienen tamannios fijos en este caso-->
             </HorizontalStackLayout>
 

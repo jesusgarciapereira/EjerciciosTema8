@@ -4,7 +4,7 @@
              x:Class="Ejercicio3.MainPage">
 
     <!--AbsoluteLayout, posicion y tamannio de manera esplicita-->
-    <AbsoluteLayout Margin="20">
+    <AbsoluteLayout>
 
         <BoxView Color="Red"
                  AbsoluteLayout.LayoutBounds="0, 0, 100, 100"/>
@@ -18,8 +18,8 @@
 
         <!--Queremos que el tamannio sea relativo al tamannio de la ventana-->
         <BoxView Color="Yellow"
-                 AbsoluteLayout.LayoutBounds="100, 200, 0.6, 0.4"
-                 AbsoluteLayout.LayoutFlags="WidthProportional, HeightProportional" />
+                 AbsoluteLayout.LayoutBounds="100, 200, 1, 1"
+                 AbsoluteLayout.LayoutFlags="SizeProportional" />
         <!--Hay que usar el AbsoluteLayout.LayoutFlags 
         pero esto te obliga a que las dimensiones sean relativas (valores entre 0 y 1)-->
     </AbsoluteLayout>
